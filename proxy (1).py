@@ -97,7 +97,7 @@ class ConnectionHandler:
 		print ('path splited+++++++++++++')
 		print('the host is %s'%host)
 		print'the path is %s'%path		
-		length = '146515'#self.get_header(host, path)
+		length = self.get_header(host, path)
 		length_2 = int(length)/2
 		range_1  = '0-' + str(length_2)
 		range_2 = str(length_2) + '-' +  length
